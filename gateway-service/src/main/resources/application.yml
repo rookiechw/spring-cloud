@@ -10,7 +10,6 @@ eureka:
 
 zuul:
   routes:
-    provider:
+    provider-service:
       path: /provider-api/**
-      serviceId: provider-service
       stripPrefix: true

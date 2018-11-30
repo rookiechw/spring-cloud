@@ -1,8 +1,11 @@
+app:
+  info:
+    version: 1.0.0
 server:
   port: 8081
 spring:
   application:
-    name: provider-service
+    name: provider-service-${app.info.version}
 eureka:
   client:
     service-url:

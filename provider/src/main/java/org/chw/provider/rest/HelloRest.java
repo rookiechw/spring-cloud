@@ -23,7 +23,7 @@ public class HelloRest {
       @ApiImplicitParam(name = "name", value = "姓名", dataType = "int", paramType = "query")})
   @RequestMapping(value = "hello", method = RequestMethod.GET)
   public String sayHello() {
-    this.redisTests.add();
+    this.redisTests.add(null,null);
     return "hello";
   }
 }
